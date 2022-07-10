@@ -226,11 +226,19 @@ header .wrap .util > .search .search_box .tab_btn ul .blackLine{
     width: 50%; height: 5px;
     background-color: #222601;
 }
-header .wrap .util > .search .search_box .tab_cont{padding: 20px 0;}
-header .wrap .util > .search .search_box .tab_cont .tab_box{
+header .wrap .util > .search .search_box .tab_cont{
+    position: absolute;
+    padding: 20px 0;
     width: 100%;
+}
+header .wrap .util > .search .search_box .tab_cont .tab_box{
+    width: calc(100% - 40px);
     opacity: 0;
     z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
 }
 header .wrap .util > .search .search_box .tab_cont .tab_box.active{
     opacity: 1;
@@ -249,7 +257,10 @@ header .wrap .util > .search .search_box .tab_cont .tab_box ul li{
     align-items: center;
     padding: 0 10px;
 }
-header .wrap .util > .search .search_box .tab_cont .tab_box ul li button{cursor: pointer;}
+header .wrap .util > .search .search_box .tab_cont .tab_box ul li button{
+    cursor: pointer; 
+    padding: 0;
+}
 header .wrap .util > .search .search_box .tab_cont .tab_box ul li button span{
     display: block;
     font-size: 20px;

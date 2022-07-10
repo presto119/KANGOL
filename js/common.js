@@ -82,6 +82,8 @@ $(document).ready(function(){
         } 
     });
 
+    
+
     /*검색창 탭버튼 이벤트*/
     $(document).on("click", ".tab_btn li", function(){
         var $index = $(this).index();
@@ -100,6 +102,7 @@ $(document).ready(function(){
 
         return false;
     });
+    
 
 
 
